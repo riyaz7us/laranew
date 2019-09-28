@@ -32,3 +32,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 /* Testing Commit here, wanna revert back and see no message*/
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

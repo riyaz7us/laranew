@@ -1,0 +1,1 @@
+<p>{{$name}} is scheduled on {{$date}} </p>

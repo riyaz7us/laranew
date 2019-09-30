@@ -13,6 +13,7 @@ class EventTableSeeder extends Seeder
      */
     public function run()
     {
+        $faker=Faker\Factory::create();
         DB::table('events')->truncate();
 
         Event::create([

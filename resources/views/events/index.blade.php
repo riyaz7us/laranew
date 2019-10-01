@@ -9,5 +9,5 @@
 		<li>No Events Found!</li>
 	@endforelse
 </ul>
-{!! $events->links() !!}
+{!! $events->links('vendor.pagination.bootstrap-4') !!}
 @endsection

@@ -21,7 +21,7 @@ Route::view('about/tos','about.tos')->name('about.tos');
 
 Route::view('contact','contact.index')->name('contact.index');
 
-Route::get('events','EventsController@index')->name('events.index');
+//Route::get('events','EventsController@index')->name('events.index');
 Route::get('events/{id}', 'EventsController@show') -> name('events.show');
 
 Route::get('languages','languagesController@index')->name('languages.index');
@@ -35,3 +35,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('events','EventsController');
